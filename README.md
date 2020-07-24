@@ -3,7 +3,9 @@ The Client Credentials grant is used when application request an access token to
 
 ## Caching Access Token
 It's relatively expensive to get an OAuth access token, because it requires an HTTP request to the token endpoint. Therefore, an application should always cache access tokens. 
-It does not make sense to fetch new access token for each API request. Access tokens has an expiration and must be cached by the application within 5 minutes of expiration.
+It does not make sense to fetch new access token for each API request. 
+
+Access tokens has an expiration and must be cached by the application within 5 minutes of token expiration.
 
 ## How to cache an Access token
 Below is the sample .NET code to cache an access token. For details, see .NET sample application folder
